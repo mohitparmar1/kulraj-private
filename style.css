@@ -5,7 +5,9 @@
     --dark:#161616;
     --pure:#FFFFFF;
     --ternary:#898989;
-    --light:orange;
+    --light:#F2F2F2;
+    --secondary:#070606;
+    --my:#eb620085;
 }
 
 body{
@@ -100,3 +102,142 @@ h1{
     
 }
 
+.container img{
+    width: 400px;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+.container h2{
+    padding: 0.5rem 0 ;
+}
+
+.container   h3{
+    padding: 0.5rem 0 ;
+}
+
+section.about h2{
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+section.about h2 span{
+    color:var(--primary) ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+}
+
+section.about h3{
+    color: orange;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section.about h3 b{
+    color:var(--dark);
+}
+
+section.about p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+        
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading +p{
+    color: var(--ternary);
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+section.services{
+    background: var(--light);
+}
+
+section.services .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:2rem;
+    grid-row-gap:6rem;
+}
+
+/*section.services.card-wrapper{
+    background: var(--secondary);
+    padding: 3rem 2rem;
+}*/
+
+section.services .card-wrapper .card{
+    background:var(--my);
+    padding: 3rem 2rem;
+    position:relative;
+    padding-top:5rem;
+    text-align: center;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0,100% 0,100% 100%,60% 80%,0 100%);
+    padding-bottom: 14rem;
+}
+
+section.freelancer h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'Lato',sans-serif;
+}
+
+section.reviews.slider img style{
+    height: 1px;
+    width: 1px;
+    
+}
+
+section.reviews.slider-dots .dots{
+    list-style-type:none;
+    display: flex!important;
+    justify-content: center;
+}
+
+section.reviews.slider-dots button{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 0;
+    width: 8px;
+
+}
